@@ -1,0 +1,20 @@
+aaaaa bbbbb
+aaaab ccccd
+aaabb cccdd
+aabcd eefgh
+abcde fghij
+aaaaa aaaab
+aaaab aaaaa
+ababa aaabb
+ababa axayz
+axayz ababa
+bbbba abbbb
+aaaaa aaaa
+aaaa aaaaa
+aaaaa aaaaaa
+aaaa aaaa
+aaaaaa aaaaaa
+aaaaa aaaaa aaaaa
+aaaaa
+
+
