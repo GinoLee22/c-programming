@@ -6,11 +6,9 @@
     If the array has no elements (n is 0), this function
     should return NULL.
 
- 2. Compile and test your code. 
+ 2. Compile and test your code.
     We have provided a main function which will print test cases
     and your function's answer for them. You should get
     99, -3, 425, NULL, and NULL for the 5 test provided.
 
  3. Submit your code.
-
-     

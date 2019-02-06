@@ -2,7 +2,21 @@
 #include <stdlib.h>
 
 int * arrayMax(int * array, int n) {
-  return NULL;
+  /*
+  * return a pointer to the largest element in the array passed in
+  */
+  if (n <= 0) {
+    return NULL;
+  }
+  int largestElement = array[0];
+  int *largestPointer = array;
+  for (int i = 1; i < n; i++) {
+    if (array[i] > largestElement) {
+      largestElement = array[i];
+      largestPointer = array + i;
+    }
+  }
+  return largestPointer;
 }
 
 void doTest(int * array, int n) {
@@ -12,10 +26,10 @@ void doTest(int * array, int n) {
   }
   else {
     printf("{");
-    for (int i =0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
       printf("%d", array[i]);
-      if (i < n -1) {
-	printf(", ");
+      if (i < n - 1) {
+	      printf(", ");
       }
     }
     printf("}");
@@ -40,6 +54,6 @@ int main(void) {
   doTest (array3, 6);
   doTest (NULL, 0);
   doTest (array1, 0);
-  
+
   return EXIT_SUCCESS;
 }
