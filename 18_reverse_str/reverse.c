@@ -3,6 +3,9 @@
 #include <string.h>
 
 void reverse(char * str) {
+  if (str == NULL) {
+    return;
+  }
   // 1. find the length of str
   int length = 0;
   char *p = str;
