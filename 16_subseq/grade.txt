@@ -1,0 +1,10 @@
+Grading at Thu Feb  7 00:34:44 UTC 2019
+Attempting to compile maxSeq.c 
+Linking your object file with our test main
+/tmp/ccYfSDro.o: In function `main':
+temp2.c:(.text+0xed): multiple definition of `main'
+maxSeq.o:maxSeq.c:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+Could not link with test main
+
+Overall Grade: F
