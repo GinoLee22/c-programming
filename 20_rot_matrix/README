@@ -1,4 +1,4 @@
-For this problem, you will be writing a function which 
+For this problem, you will be writing a function which
 performs a 90 degree clockwise rotation of a 10x10 matrix.
 There is nothing special about a 10x10 matrix---we are just
 fixing the size so that you can read the input in a future
@@ -16,10 +16,10 @@ it 90 degrees clockwise, updating the matrix that was passed in
 (remember that arrays are pointers, so you will modify
 the array in the frame where it was created).
 
-As you hav enot yet learned to read from files, we have
+As you have not yet learned to read from files, we have
 provided a compiled object file, read-matrix.o.  This
 object file has a main function which will read
-the input file (specified as a command line arugments
+the input file (specified as a command line arguments
 to your program), call your rotate function, and
 then print the result.
 
