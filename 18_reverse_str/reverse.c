@@ -10,6 +10,9 @@ void reverse(char * str) {
     length++;
     p++;
   }
+  if (length == 0) {
+    return;
+  }
   // printf("length is: %d\n", length);
   // 2. swap
   char *p1 = str, *p2 = str + length - 1;
