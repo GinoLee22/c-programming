@@ -1,22 +1,31 @@
-For this assignment, you will be writing testcases for
-your next assignment (as usual, the instructions for that assignment
-can be found in next-README).
 
-As usual, one correct and many broken implementations can be found
-in /usr/local/l2p/subseq.
+ 1. Create a file called maxSeq.c and write the function:
+       size_t maxSeq(int * array, size_t n);
 
-As with power, these are provided as compiled object files, and you
-should write a C program (in test-subseq.c) whose main function tests
-the maxSeq function. As before, it should exit with EXIT_SUCCESS if all
-tests pass, and EXIT_FAILURE if any test fails.  Note that you will
-need to write the prototype for maxSeq:
+    which returns the length of the maximum increasing contiguous
+    subsequence in the array.  The parameter n specifies the length
+    of the array For example, if the array passed in were
 
- size_t maxSeq(int * array, size_t n);
+     { 1, 2, 1, 3, 5, 7, 2, 4, 6, 9}
 
-in your test-subseq.c file, so that the compiler knows about the
-maxSeq function.  The correct place to put it is after you #include
-any .h files you need, but before any other code you write.
+    this function would return 4 because the longest sequence
+    of (strictly) increasing numbers in that array is 1, 3, 5, 7
+    which has length 4.  Note that 1,3,5,7,9 is an increasing
+    subsequence, but is not contiguous (finding discontiguous
+    ones efficiently takes techniques we haven't learned yet).
 
-We have provided run_all.sh to help you run your test cases against
-all implementations.
+    Note that the subseqence does not need to increase at a
+    constant rate (or follow any other pattern besides being strictly
+    increasing).  2, 4, 67, 93, 94, 102 would be a valid increasing
+    sequence of length 6.
 
+
+2. Compile and test your code using the test-subseq.c you wrote
+   previously.  (as before, compile the .c files separately, and link
+   them together).
+
+3. Submit your code for maxSeq.c
+
+
+Hint:
+  Can you abstract a complex step out into a simple function?
