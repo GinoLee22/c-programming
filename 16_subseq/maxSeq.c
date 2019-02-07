@@ -4,6 +4,7 @@
 size_t maxSeq(int * array, size_t n);
 size_t max(size_t size1, size_t size2);
 
+/*
 int main(void) {
   printf("***** Test of maxSeq() *****\n");
 
@@ -37,6 +38,7 @@ int main(void) {
   printf("\nThe answer of {1, 1, 1, 1, 1, 1} should be 1.\n");
   printf("The test result is: %d\n", (int) maxSeq(array6, 6));
 }
+*/
 
 size_t maxSeq(int * array, size_t n) {
   // corner case
