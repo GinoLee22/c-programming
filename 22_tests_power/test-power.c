@@ -6,18 +6,23 @@ void run_check(unsigned x, unsigned y, unsigned expected_ans);
 
 int main(void) {
   /* test:
-    0 ^ 1 -> 1, 0 ^ 2 -> 1
+    0 ^ 0 -> 1
+    0 ^ 1 -> 0, 0 ^ 2 -> 0
     1 ^ 0 -> 1, 2 ^ 0 -> 1
     1 ^ 1 -> 1, 1 ^ 2 -> 1
     2 ^ 3 -> 8
+    -1 ^ 2 -> 1
   */
-  run_check(0, 1, 1);
-  run_check(0, 2, 1);
+  run_check(0, 0, 1);
+  run_check(0, 1, 0);
+  run_check(0, 2, 0);
   run_check(1, 0, 1);
   run_check(2, 0, 1);
   run_check(1, 1, 1);
   run_check(1, 2, 1);
   run_check(2, 3, 8);
+  run_check(2, 30, 1073741824);
+  run_check(-1, 2, 1);
   return EXIT_SUCCESS;
 }
 
