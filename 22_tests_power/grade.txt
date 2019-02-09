@@ -1,0 +1,119 @@
+Grading at Sat Feb  9 01:28:08 UTC 2019
+**Testing broken implementation 10 **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Wrong!
+
+**Testing broken implementation 11 **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Wrong!
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+Correct!
+Wrong!
+
+**Testing broken implementation 2 **
+-------------------------------------
+
+Correct!
+Wrong!
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+Wrong!
+
+**Testing broken implementation 4 **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Wrong!
+
+**Testing broken implementation 5 **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Wrong!
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+Correct!
+Wrong!
+
+**Testing broken implementation 7 **
+-------------------------------------
+
+Correct!
+Wrong!
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Wrong!
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Wrong!
+
+**Testing correct implementation **
+-------------------------------------
+
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+Correct!
+
+All tests were ok.
+
+
+Overall Grade: PASSED
