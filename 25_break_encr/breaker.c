@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-// int max(int a, int b);
 int decrypt(FILE * inputFile);
 
 int main(int argc, char ** argv) {
@@ -24,10 +23,6 @@ int main(int argc, char ** argv) {
   return EXIT_SUCCESS;
 }
 
-// int max(int a, int b) {
-//   return a > b ? a : b;
-// }
-
 /*
 * input: a file stream
 * output: a decrypt key
@@ -47,5 +42,5 @@ int decrypt(FILE * inputFile) {
       }
     }
   }
-  return res - 'a';
+  return res - 'e';
 }
