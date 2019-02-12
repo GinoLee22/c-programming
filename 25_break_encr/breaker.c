@@ -42,5 +42,5 @@ int decrypt(FILE * inputFile) {
       }
     }
   }
-  return (res - 'e') % 26;
+  return res - 'e' >= 0 ? res - 'e' : res - 'e' + 26;
 }
