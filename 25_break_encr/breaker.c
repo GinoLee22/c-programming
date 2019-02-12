@@ -32,10 +32,8 @@ int decrypt(FILE * inputFile) {
   int max = 0;
   int tmpKey, curChar;
   char res = 'a';
-  printf("Test case is: ");
   while ((curChar = fgetc(inputFile)) != EOF) {
     if (isalpha(curChar)) {
-      printf("%c", curChar);
       tmpKey = tolower(curChar) - 'a';
       alphabetCnt[tmpKey]++;
       if (alphabetCnt[tmpKey] > max) {
@@ -44,6 +42,5 @@ int decrypt(FILE * inputFile) {
       }
     }
   }
-  printf("\n");
-  return res - 'e';
+  return (res - 'e') % 26;
 }
