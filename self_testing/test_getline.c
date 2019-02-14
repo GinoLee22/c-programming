@@ -6,5 +6,5 @@ int main (void) {
   char * line = NULL;
   getline(&line, &sz, stdin);
   printf("%d\n", (int)sz);
-  // free(line);          // comment OR uncomment this line for Valgrind test
+  free(line);          // comment OR uncomment this line for Valgrind test
 }
