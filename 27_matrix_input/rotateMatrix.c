@@ -46,15 +46,9 @@ void readMatrix(char matrix[10][10], char * fileName) {
   }
   // filling the matrix
   while ((c = fgetc(f)) != EOF) {
-    // if (row == 9) {
-    //   printf("%c\n", c);
-    // }
     if (c == '\n') {
       // error handling: when there is new line -> col != 10
       if (col != size) {
-        // printf("%c\n", c);
-        // printf("row is %d\n", row);
-        // printf("col is %d\n", col);
         fprintf(stderr, "Incorrect column number\n" );
         exit(EXIT_FAILURE);
       }
@@ -64,7 +58,7 @@ void readMatrix(char matrix[10][10], char * fileName) {
     }
     if (row >= size) {
       // error handling: when the row exceed 10 with early jump out
-      fprintf(stderr, "Incorrect row number\n" );
+      fprintf(stderr, "inner Incorrect row number\n" );
       exit(EXIT_FAILURE);
     }
     matrix[row][col] = (char)c;
@@ -72,7 +66,8 @@ void readMatrix(char matrix[10][10], char * fileName) {
   }
   if (row != size) {
     // error handling: row not enough
-    fprintf(stderr, "Incorrect row number\n" );
+    printf("%d\n", row);
+    fprintf(stderr, "Out Incorrect row number\n" );
     exit(EXIT_FAILURE);
   }
   if (fclose(f) != 0) {
@@ -93,10 +88,13 @@ void printMatrix(char matrix[10][10]) {
 }
 
 int main(int argc, char ** argv) {
+  if (argc != 2) {
+    fprintf(stderr, "Error in command line argument.\n");
+    exit(EXIT_FAILURE);
+  }
   char matrix[10][10];
   char * fileName = argv[1];
   readMatrix(matrix, fileName);
   rotate(matrix);
   printMatrix(matrix);
-  // printf("%c\n", matrix[1][0]);
 }
