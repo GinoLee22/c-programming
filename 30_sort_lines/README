@@ -1,6 +1,6 @@
 For this problem, you will write a program (by modifying the provided
 sortLines.c file) which sorts strings from input files. As we have not
-yet covered sorting, we have provided the code that does the acutal
+yet covered sorting, we have provided the code that does the actual
 sorting.  You can just call this function, which will sort the data.
 
   void sortData(char ** data, size_t count);
@@ -14,7 +14,7 @@ the array from the input file(s), so that it can be sorted.  You will also
 need to print the data after it is sorted, and free all of the memory you have allocated.
 
 Specifically, this program should take 0 or more command line arguments.
- - If no arguments (other than its own name) are provided (argc ==1), then 
+ - If no arguments (other than its own name) are provided (argc ==1), then
    your program should read from standard input, sort the lines of input,
    print the results, free memory, and exit successfully.
  - If 1 or more arguments are provided (argc > 1), then your program should
@@ -25,10 +25,10 @@ Specifically, this program should take 0 or more command line arguments.
    If no errors occur, your program should indicate its success after processing
    all of the files.
 
-Note that we now place *no* restriction on the length of any individual line of input.  
-You should therefore use the getline function to read an arbitrarily long line of 
+Note that we now place *no* restriction on the length of any individual line of input.
+You should therefore use the getline function to read an arbitrarily long line of
 input, dynamically allocating space for it as needed.   See the man page for getline
-for more details. 
+for more details.
 
 You should make sure your program valgrinds cleanly, including no memory leaks
 before you submit it.  As always, submit your code for grading.
@@ -38,4 +38,3 @@ Hints:
     I wrote 3 functions other than main (plus the 2 that are provided).
   - Don't forget to draw pictures!  They are even more important
     as you use pointers more and more.
-

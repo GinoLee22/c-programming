@@ -16,9 +16,39 @@ void sortData(char ** data, size_t count) {
   qsort(data, count, sizeof(char *), stringOrder);
 }
 
+void readAndPrintFiles(char *fileName);
+
 int main(int argc, char ** argv) {
-  
-  //WRITE YOUR CODE HERE!
-  
+  if (argc == 1) {
+    // read from stdin
+  } else {      // read from files
+    // for (int i = 1; i < argc; i++) {
+    //   readAndPrintFiles(argv[i]);
+    // }
+    readAndPrintFiles("input.txt");
+  }
   return EXIT_SUCCESS;
+}
+
+// error: return NULL
+void readAndPrintFiles(char *fileName) {
+  // 1st: open file
+  FILE * f = fopen(fileName, "r");
+  if (f == NULL) {
+    perror("Fail to open read file");
+    return;
+  }
+  // 2nd: read file
+  char * lineBuffer = NULL;
+  size_t lineBufferSize;
+  while (getline(&lineBuffer, &lineBufferSize, f) >= 0) {
+    sortData(&lineBuffer, lineBufferSize);
+    printf("%s", lineBuffer);
+  }
+  free(lineBuffer);
+  // 3rd: close file
+  if (fclose(f) != 0) {
+    perror("Fail to close read file");
+    return;
+  }
 }
