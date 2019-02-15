@@ -58,14 +58,14 @@ char ** readFile(char * fileName, int * outputSize) {
   FILE * f = fopen(fileName, "r");
   if (f == NULL) {
     perror("Fail to open read file");
-    return NULL;
+    exit(EXIT_FAILURE);
   }
   // 2nd: read file
   char ** output = readFromStream(f, outputSize);
   // 3rd: close file
   if (fclose(f) != 0) {
     perror("Fail to close read file");
-    return NULL;
+    exit(EXIT_FAILURE);
   }
   return output;
 }
